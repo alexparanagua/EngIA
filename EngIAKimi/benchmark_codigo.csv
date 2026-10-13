@@ -1,0 +1,109 @@
+provider,model,input_tokens,output_tokens,total_tokens,time_seconds,cost_usd,response,execution_result
+kimi,kimi-k2.6,73,555,628,14.755487442016602,0.008544,"def is_prime(n):
+    if n <= 1:
+        return False
+    if n == 2:
+        return True
+    if n % 2 == 0:
+        return False
+    i = 3
+    while i * i <= n:
+        if n % i == 0:
+            return False
+        i += 2
+    return True
+
+assert is_prime(2) is True
+assert is_prime(17) is True
+assert is_prime(18) is False",OK
+claude-opus,claude-haiku-4-5-20251001,72,229,301,2.5851240158081055,0.006085,"
+```python
+def is_prime(n):
+    """"""
+    Verifica se um número inteiro é primo.
+    
+    Args:
+        n: Um número inteiro
+        
+    Returns:
+        bool: True se n é primo, False caso contrário
+    """"""
+    if n < 2:
+        return False
+    if n == 2:
+        return True
+    if n % 2 == 0:
+        return False
+    
+    for i in range(3, int(n**0.5) + 1, 2):
+        if n % i == 0:
+            return False
+    return True
+
+
+# 3 testes unitários
+assert is_prime(2) == True, ""2 deve ser primo""
+assert is_prime(17) == True, ""17 deve ser primo""
+assert is_prime(10) == False, ""10 não deve ser primo""
+
+print(""Todos os testes passaram!"")
+```",OK
+gpt-5.5,gpt-5.5,62,163,225,10.109063386917114,0.0052,"def is_prime(n):
+    if n <= 1:
+        return False
+    if n <= 3:
+        return True
+    if n % 2 == 0 or n % 3 == 0:
+        return False
+
+    i = 5
+    while i * i <= n:
+        if n % i == 0 or n % (i + 2) == 0:
+            return False
+        i += 6
+
+    return True
+
+
+assert is_prime(2) is True
+assert is_prime(17) is True
+assert is_prime(18) is False",OK
+gemini,gemini-3.5-flash-lite,55,146,201,115.50012874603271,0.001178,"```python
+def is_prime(n: int) -> bool:
+    if n <= 1:
+        return False
+    if n <= 3:
+        return True
+    if n % 2 == 0 or n % 3 == 0:
+        return False
+    i = 5
+    while i * i <= n:
+        if n % i == 0 or n % (i + 2) == 0:
+            return False
+        i += 6
+    return True
+
+assert is_prime(2) == True
+assert is_prime(4) == False
+assert is_prime(17) == True
+```",OK
+groq,openai/gpt-oss-20b,126,523,649,2.1521799564361572,0.0,"def is_prime(n):
+    if n <= 1:
+        return False
+    if n <= 3:
+        return True
+    if n % 2 == 0 or n % 3 == 0:
+        return False
+    i = 5
+    w = 2
+    while i * i <= n:
+        if n % i == 0:
+            return False
+        i += w
+        w = 6 - w
+    return True
+
+# Unit tests
+assert is_prime(2) is True
+assert is_prime(15) is False
+assert is_prime(13) is True",OK

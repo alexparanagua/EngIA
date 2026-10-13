@@ -1,0 +1,83 @@
+provider,model,input_tokens,output_tokens,total_tokens,time_seconds,cost_usd,response
+kimi,kimi-k2.6,58,966,1024,17.67216181755066,0.014664,"**LLM** (Large Language Model, ou Grande Modelo de Linguagem) é um modelo de inteligência artificial baseado em redes neurais profundas — geralmente arquitetura *transformer* — treinado em enormes volumes de texto. Ele aprende padrões linguísticos e contextuais para prever a sequência mais provável de palavras (tokens), permitindo gerar texto, responder perguntas, traduzir idiomas e produzir código.
+
+**Três aplicações práticas em desenvolvimento de software:**
+
+1. **Assistentes de código (AI pair programming)**  
+   Ferramentas como GitHub Copilot ou Amazon CodeWhisperer autocompletam trechos de código, geram funções inteiras a partir de comentários e convertem lógica entre linguagens de programação, acelerando a produtividade do desenvolvedor.
+
+2. **Geração automatizada de testes e documentação**  
+   O LLM analisa o código-fonte para criar casos de teste unitários, docstrings e documentação técnica (como READMEs), reduzindo o débito técnico e garantindo que a base de código permaneça melhor documentada.
+
+3. **Revisão e debug inteligente**  
+   O modelo é usado para escanear código em busca de bugs lógicos, vulnerabilidades de segurança (como injeção SQL ou vazamento de dados) e *code smells*, sugerindo refatorações para melhorar a performance, legibilidade e manutenibilidade do sistema."
+claude-opus,claude-haiku-4-5-20251001,49,396,445,4.181425094604492,0.010145,"# O que é um LLM?
+
+Um **LLM (Large Language Model)** é um modelo de inteligência artificial baseado em redes neurais profundas, treinado em grandes volumes de texto para entender e gerar linguagem natural. Funciona através de padrões aprendidos durante o treinamento, prevendo a próxima palavra ou sequência de palavras com base no contexto.
+
+**Características principais:**
+- Billions de parâmetros (pesos da rede neural)
+- Treinamento em corpus massivos de dados textuais
+- Capacidade de realizar múltiplas tarefas sem retreinamento específico
+
+---
+
+## 3 Aplicações Práticas em Desenvolvimento de Software
+
+### 1. **Geração de Código**
+- Assistentes como GitHub Copilot e ChatGPT geram trechos de código, completam funções e sugerem soluções
+- Acelera a escrita de boilerplate e reduz tempo de desenvolvimento
+
+### 2. **Documentação Automatizada**
+- Geram comentários, docstrings e README baseados no código existente
+- Criam documentação técnica de APIs e funções
+- Reduz esforço manual na manutenção de documentação
+
+### 3. **Análise e Debugging**
+- Identificam bugs ao revisar código
+- Explicam erros e sugerem correções
+- Analisam complexidade e segurança do código
+- Auxiliam na refatoração e otimização
+
+---
+
+Essas aplicações aumentam produtividade e qualidade do código, mas devem ser validadas por desenvolvedores."
+gpt-5.5,gpt-5.5,44,189,233,4.166824102401733,0.00589,"Um **LLM (Large Language Model)** é um **modelo de linguagem de grande escala** treinado com enormes volumes de texto e código para compreender, gerar e transformar linguagem natural. Ele consegue responder perguntas, resumir informações, escrever textos, analisar instruções e até gerar código com base em prompts.
+
+Três aplicações práticas em desenvolvimento de software:
+
+1. **Geração e autocompletar código**  
+   Ajuda a escrever funções, classes, testes e trechos de código a partir de descrições em linguagem natural.
+
+2. **Revisão e explicação de código**  
+   Pode identificar possíveis bugs, sugerir melhorias, explicar trechos complexos e apontar problemas de legibilidade ou segurança.
+
+3. **Criação de testes automatizados**  
+   Auxilia na geração de testes unitários, testes de integração e cenários de validação com base no código existente ou nos requisitos do sistema."
+gemini,gemini-3.5-flash-lite,36,324,360,2.1062417030334473,0.002484,"**O que é um LLM?**
+
+LLM é a sigla para *Large Language Model* (Grande Modelo de Linguagem). Trata-se de um tipo de Inteligência Artificial treinado com vastas quantidades de texto da internet. Ele utiliza redes neurais profundas (arquitetura *Transformer*) para entender o contexto da linguagem humana, prever a próxima palavra em uma frase e, assim, gerar textos coerentes, responder perguntas e realizar tarefas complexas de processamento de linguagem natural.
+
+---
+
+### Três aplicações práticas em Desenvolvimento de Software:
+
+1. **Geração e Autocompletação de Código:**
+   Ferramentas como o GitHub Copilot utilizam LLMs para sugerir linhas inteiras ou blocos de código em tempo real, baseando-se nos comentários ou no contexto do que o desenvolvedor está programando, aumentando drasticamente a produtividade.
+
+2. **Tradução e Migração de Código:**
+   LLMs podem ser usados para reescrever código de uma linguagem de programação para outra (por exemplo, converter um sistema legado em COBOL para Java ou Python), compreendendo a lógica original e adaptando-a para a sintaxe e boas práticas da nova linguagem.
+
+3. **Revisão de Código e Detecção de *Bugs* (Code Review):**
+   Modelos podem analisar *pull requests* automaticamente para identificar falhas de segurança, gargalos de performance, vulnerabilidades e desvios de padrões de projeto, sugerindo correções antes que o código vá para produção."
+groq,openai/gpt-oss-20b,108,378,486,0.8397693634033203,0.0,"**LLM** (Large Language Model) é um tipo de modelo de inteligência artificial que aprende a gerar e compreender texto a partir de enormes volumes de dados linguísticos. Ele usa arquiteturas de redes neurais, principalmente transformers, para capturar padrões semânticos, sintáticos e contextuais. Por isso, consegue produzir respostas, completar códigos, traduzir textos e até criar novos conteúdos de forma autônoma.
+
+### Três aplicações práticas em desenvolvimento de software
+
+| Aplicação | Como funciona | Benefício para o desenvolvedor |
+|-----------|---------------|--------------------------------|
+| **Assistente de codificação (ex.: GitHub Copilot, Tabnine)** | O LLM recebe trechos de código ou comentários e gera sugestões de implementação, autocompleta funções, refatora trechos e até cria testes. | Acelera o desenvolvimento, reduz erros e ajuda a manter boas práticas de codificação. |
+| **Análise e refatoração de código** | O LLM lê arquivos de código e identifica padrões problemáticos (código duplicado, anti‑padrões, vulnerabilidades). | Permite identificar rapidamente pontos de melhoria e aplicar refatorações automatizadas. |
+| **Documentação automática e comentários** | A partir do código fonte, o LLM gera documentação (docstrings, README, diagramas) e descreve o fluxo de execução. | Economiza tempo na criação de documentação, garantindo que ela esteja atualizada e compreensível para novos membros da equipe. |
+
+Essas aplicações demonstram como os LLMs podem reduzir a carga de trabalho repetitiva, melhorar a qualidade do código e acelerar o ciclo de desenvolvimento."
